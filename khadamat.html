@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080, initial-scale=1.0">
+    <title>Hotel Programs</title>
+    <link rel="stylesheet" href="./style/app.css">
+    <link rel="stylesheet" href="./style/khadamat.css">
+</head>
+<body>
+    <div class="khadCont">
+        <div class="bottomContHeader">
+            <span class="bottomContHeaderTitle">خدمات اتاق</span>
+            <div class="bottomContHeaderBtn">
+                <div class="bottomContHeaderSingleBtn" id="backBtnHS"><img src="./img/back.png" alt=""></div>
+                <span class="bottomContHeaderClk">19:34</span>
+            </div>
+        </div>
+        <div class="khadBottomCont">
+            <div class="khadBottomContSingle">
+                <div class="khadBottomContSingleGrad">
+                    <span class="khadBottomContSingleGradSpan">تعویض حوله‌ها</span>
+                </div>
+                <img src="./img/twel.jpg" alt="">
+            </div>
+            <div class="khadBottomContSingle">
+                <div class="khadBottomContSingleGrad">
+                    <span class="khadBottomContSingleGradSpan">شارژ لوازم</span>
+                </div>
+                <img src="./img/toil.jpg" alt="">
+            </div>
+            <div class="khadBottomContSingle active">
+                <div class="khadBottomContSingleGrad">
+                    <span class="khadBottomContSingleGradSpan">نظافت اتاق</span>
+                </div>
+                <img src="./img/roomClean.jpg" alt="">
+            </div>
+            <div class="khadBottomContSingle">
+                <div class="khadBottomContSingleGrad">
+                    <span class="khadBottomContSingleGradSpan">تعویض پتوها</span>
+                </div>
+                <img src="./img/blac.jpg" alt="">
+            </div>
+            <div class="khadBottomContSingle">
+                <div class="khadBottomContSingleGrad">
+                    <span class="khadBottomContSingleGradSpan">خشکشویی</span>
+                </div>
+                <img src="./img/laun.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery.js"></script>
+<script>
+    $(document).ready(function() {
+        // Capture keydown events
+        $(document).keydown(function(e) {
+            var $current = $('.khadBottomContSingle.active');
+            var $all = $('.khadBottomContSingle');
+            var index = $all.index($current);
+
+            if (e.key === "ArrowLeft") { // Move right
+                $current.removeClass('active');
+                var nextIndex = (index + 1) % $all.length; // Loop to start
+                $all.eq(nextIndex).addClass('active');
+            } 
+            else if (e.key === "ArrowRight") { // Move left
+                $current.removeClass('active');
+                var prevIndex = (index - 1 + $all.length) % $all.length; // Loop to end
+                $all.eq(prevIndex).addClass('active');
+            }
+        });
+    });
+</script>
+</html>
