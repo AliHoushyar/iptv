@@ -226,7 +226,7 @@
 </body>
 <script src="./js/jquery.js"></script>
 <script src="./js/main.js"></script>
-<!-- <script>
+<script>
     function getTehranTime() {
         const now = new Date();
 
@@ -260,11 +260,15 @@
 
     function updateOghat(){
         let { hours, minutes, seconds } = getTehranTime();
-        let oghH = 10
+        let oghH = 4
         let oghM = 36
         let oghS = 38
         ogh = oghH*60*60 + oghM*60 + oghS
         mi = hours*60*60 + minutes*60 + seconds
+        if(mi > ogh){
+            mi = (hours - 12)*60*60 + minutes*60 + seconds
+            ogh = (oghH + 12)*60*60 + oghM*60 + oghS
+        }
         ogh -= mi
         hours = Math.floor(ogh/3600)
         minutes = Math.floor(ogh/60)
@@ -287,6 +291,6 @@
     // setInterval(updateOghat, 1000);
     updateClock();
     // updateOghat();
-</script> -->
+</script>
 
 </html>
