@@ -1,0 +1,317 @@
+@font-face {
+    font-family: "shabnam";
+    src: url("../fonts/Shabnam-FD.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "beyroot";
+    src: url("../fonts/Mj\ Beirut\ Light\ .ttf") format("woff2");
+}
+
+@font-face {
+    font-family: "vanc";
+    src: url("../fonts/ibrand.otf") format("woff2");
+}
+
+:root{
+    /* --main-color : #010118;
+    --border-color : #313174;
+    --shine-color : #2abbd1;
+    --shadow-color : #1f26875e */
+    --main-color : #180101;
+    --border-color : #743131;
+    --shine-color : #d12a2a;
+    --shadow-color : #871f1f5e;
+    /* --main-color : #0a0118;
+    --border-color : #4a3073;
+    --shine-color : #6a2ad1;
+    --shadow-color : #471f875e; */
+    /* --main-color : #170e01;
+    --border-color : #735830;
+    --shine-color : #d18e2a;
+    --shadow-color : #875e1f5e; */
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'shabnam',sans-serif;
+}
+
+body{
+    background-color: var(--main-color);
+}
+
+.secBigCont{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.secBigContTilte{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+.secBigContTilteTxt{
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.secBigContTilteBack{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--border-color);
+    border: none;
+    border-radius: 50%;
+}
+
+.secBigContTilteBack img{
+    width: 60%;
+}
+
+.plansCont{
+    width: 100%;
+    height: 86vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.plansContSingle{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.plansContSingle img{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.plansContSingle{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+    padding: 25px 6px;
+    direction: ltr;
+}
+
+.plansContSingle1 { 
+    grid-area: 1 / 6 / 4 / 11;
+    background-image: url(../img/single3.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    filter: grayscale(1);
+    opacity: 0.7;
+    transition: all 250ms ease-in-out;
+}
+
+.plansContSingle2 { 
+    grid-area: 1 / 1 / 4 / 6;
+    background-image: url(../img/single2.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    filter: grayscale(1);
+    opacity: 0.7;
+    transition: all 250ms ease-in-out;
+}
+
+.plansContSingle3 { 
+    grid-area: 4 / 1 / 7 / 4;
+    background-image: url(../img/single4.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    filter: grayscale(1);
+    opacity: 0.7;
+    transition: all 250ms ease-in-out;
+}
+
+.plansContSingle4 { 
+    grid-area: 7 / 1 / 10 / 4;
+    background-image: url(../img/single5.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    filter: grayscale(1);
+    opacity: 0.7;
+    transition: all 250ms ease-in-out;
+}
+
+.plansContSingle5 { 
+    grid-area: 4 / 4 / 10 / 11;
+    background-image: url(../img/chali.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    filter: grayscale(1);
+    opacity: 0.7;
+    transition: all 250ms ease-in-out;
+}
+
+.plansContSingle6 {
+    grid-area: 7 / 5 / 10 / 11;
+    background-image: url(../img/single9.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    filter: grayscale(1);
+    opacity: 0.7;
+    transition: all 250ms ease-in-out;
+}
+
+.plansContSingle7 {
+    grid-area: 7 / 1 / 10 / 5;
+    background-image: url(../img/single10.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    filter: grayscale(1);
+    opacity: 0.7;
+    transition: all 250ms ease-in-out;
+}
+
+.plansContSingle8 {
+    grid-area: 5 / 8 / 7 / 11;
+    background-image: url(../img/single8.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    filter: grayscale(1);
+    opacity: 0.7;
+    transition: all 250ms ease-in-out;
+}
+
+.plansContSingle9 {
+    grid-area: 1 / 8 / 5 / 11;
+    background-image: url(../img/single7.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    filter: grayscale(1);
+    opacity: 0.7;
+    transition: all 250ms ease-in-out;
+}
+
+.plansContSingle10 {
+    grid-area: 1 / 1 / 7 / 8;
+    background-image: url(../img/single6.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    filter: grayscale(1);
+    opacity: 0.7;
+    transition: all 250ms ease-in-out;
+}
+
+.plansContSingle1.active{
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.plansContSingle2.active{
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.plansContSingle3.active{
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.plansContSingle4.active{
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.plansContSingle5.active{
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.plansContSingle6.active{
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.plansContSingle7.active{
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.plansContSingle8.active{
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.plansContSingle9.active{
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.plansContSingle10.active{
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.plansContSingleGrad{
+    width: 0%;
+    height: 100%;
+    background-color: rgba(72, 0, 0, 0.65);
+    border-radius: inherit;
+    opacity: 0;
+    transition: all 250ms ease-in-out;
+}
+
+.plansContSingleGrad.active{
+    opacity: 1;
+    width: 100%;
+}
+
+.bottomcont{
+    width: 100%;
+    height: 86vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 555px;
+}
+
+.bottomcontSingle{
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.bottomcontSingleBg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bottomcontSingleicon{
+    width: 60%;
+    margin-bottom: 55px;
+}

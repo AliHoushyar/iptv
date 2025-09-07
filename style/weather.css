@@ -1,0 +1,184 @@
+.weatherBigContainer{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 25px 50px;
+    position: relative;
+    background: linear-gradient(225deg,rgba(106, 128, 149, 1) 0%, rgba(117, 138, 157, 1) 100%);
+}
+
+.weatherCont{
+    width: 100%;
+    height: 85vh;
+    position: relative;
+}
+
+.mainWeatherType{
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    width: 40%;
+}
+
+.weatherContNumbers{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 15px;
+}
+
+.weatherContNumbersDegree{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.weatherContNumbersDegreeMain , .weatherContNumbersDegreeMain span{
+    font-size: 128px;
+    color: #ffffff;
+    font-family: 'vanc';
+    direction: ltr;
+}
+
+.TEmpUnit{
+    font-size: 80px !important;
+}
+
+.weatherContNumbersType{
+    font-size: 24px;
+    color: #ffffff;
+    margin-top: -20px;
+}
+
+.weatherContNumbersRow{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.weatherContNumbersRowIcon{
+    width: 80px;
+}
+
+.weatherContNumbersRowTexts{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+    color: #ffffff;
+}
+
+.weatherContNumbersRowTextsTitle{
+    font-size: 18px;
+}
+
+.weatherContNumbersRowTextsMain , .weatherContNumbersRowTextsMain span{
+    font-size: 24px;
+    font-family: 'vanc';
+}
+
+.weatherContNumbersRowTextsMain span{
+    margin-right: 5px;
+    font-size: 32px;
+}
+
+.windDir{
+    font-family: 'shabnam' !important;
+    font-size: 24px !important;
+}
+
+.weatherContDays{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weatherContDaysSingle{
+    width: 100%;
+    height: calc(100% / 7);
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.weatherContDaysSingleType{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    gap: 7px;
+}
+
+.weatherContDaysSingleType img{
+    width: 60px;
+}
+
+.weatherContDaysSingleType span{
+    width: 100%;
+    text-align: center;
+}
+
+.weatherContDaysSingleDate{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.weatherContHours{
+    width: 100%;
+    height: 145px;
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    direction: ltr;
+}
+
+.weatherContHoursSingle{
+    width: 115px;
+    height: 100%;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.weatherContHoursSingleIcon{
+    width: 40px;
+}
