@@ -13,4 +13,68 @@
     width: 100%;
     height: 85vh;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.singleOghat{
+    width: calc(100% / 6.75);
+    height: 100%;
+    border: 1px solid #ffffff41;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 20px 10px;
+    backdrop-filter: blur(5px);
+}
+
+.singleOghatTitle{
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.singleOghatRows{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+    margin-top: 7px;
+}
+
+.singleOghatRow{
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    color: #ffffff;
+    font-size: 18px;
+    backdrop-filter: blur(10px);
+}
+
+.oghatBg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+}
+
+.bottomContHeader.oghat{
+    z-index: 10;
+}
+
+.singleOghatsub{
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 7px;
 }

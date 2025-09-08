@@ -1,0 +1,111 @@
+.notificationsCont {
+    position: absolute;
+    width: 450px;
+    height: 120px;
+    top: 25px;
+    right: 25px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+}
+
+.notificationsContImg {
+    width: 120px;
+    height: 120px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #920909;
+    z-index: 2;
+    box-shadow: rgba(255, 0, 0, 0.25) 0px 5px 28px, rgba(255, 0, 0, 0.22) 0px 5px 10px;
+    opacity: 0;
+    transform: translateX(40px);
+    animation: slideIn 0.6s ease forwards;
+}
+
+.notificationsContImg img {
+    width: 90%;
+    animation: wiggle 1.4s ease forwards;
+    animation-delay: 1.3s;
+}
+
+.notificationsContText {
+    width: 0;
+    height: 90px;
+    background-color: var(--main-color);
+    margin-right: -50px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: #ffffff;
+    gap: 7px;
+    padding-right: 0;
+    border: 2px solid #920909;
+    box-shadow: rgba(255, 0, 0, 0.25) 0px 5px 28px, rgba(255, 0, 0.22) 0px 5px 10px;
+    overflow: hidden;
+    opacity: 0;
+    animation: expandWidth 0.7s ease forwards;
+    animation-delay: 0.6s;
+}
+
+.notificationsContText span{
+    opacity: 0;
+    animation: expandWidthText 0.7s ease forwards;
+    animation-delay: 1.3s;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes expandWidth {
+    from {
+        width: 0;
+        padding-right: 0;
+        opacity: 0;
+    }
+    to {
+        width: 320px;
+        padding-right: 65px;
+        opacity: 1;
+    }
+}
+
+@keyframes expandWidthText {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes wiggle {
+    0%   {
+        transform: rotateX(0deg);
+    }
+    10%  {
+        transform: rotateX(25deg);
+    }
+    20%  {
+        transform: rotateX(-25deg);
+    }
+    30%  {
+        transform: rotateX(10deg);
+    }
+    40%  {
+        transform: rotateX(-10deg);
+    }
+    50%  {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
